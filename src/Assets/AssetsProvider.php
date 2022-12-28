@@ -48,6 +48,7 @@ class AssetsProvider
             '@ckeditor/ckeditor5-build-classic/build/ckeditor.js',
             '@ckeditor/ckeditor5-build-classic/build/translations/'.substr(I18n::getLocale(), 0, 2).'.js',
             'plugin:Admin:js/app.ckeditor.js',
+            'elfinder/js/elfinder.full.js',
         ];
     }
 
