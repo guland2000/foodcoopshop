@@ -80,7 +80,7 @@ foodcoopshop.ModalCustomerCommentEdit = {
 
         new bootstrap.Modal(document.getElementById(modalSelector.replace(/#/, ''))).show();
 
-        foodcoopshop.Helper.initCkeditor('dialogCustomerComment', true);
+        foodcoopshop.AppCkeditor.init('dialogCustomerComment', true);
 
         var text = button.attr('originalTitle');
         if (text == foodcoopshop.LocalizedJs.admin.AddComment) {

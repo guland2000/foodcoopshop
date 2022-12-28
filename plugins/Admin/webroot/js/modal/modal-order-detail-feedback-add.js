@@ -94,7 +94,7 @@ foodcoopshop.ModalOrderDetailFeedbackAdd = {
             {},
             {
                 onOk: function (data) {
-                    foodcoopshop.Helper.initCkeditorSmallWithUpload('dialogOrderDetailFeedback', true);
+                    foodcoopshop.AppCkeditor.initSmallWithUpload('dialogOrderDetailFeedback', true);
                 },
                 onError: function (data) {
                     foodcoopshop.Modal.appendFlashMessage(modalSelector, data.msg);

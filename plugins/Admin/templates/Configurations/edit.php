@@ -67,7 +67,7 @@ switch ($configuration->type) {
         break;
     case 'textarea':
         $this->element('addScript', [
-            'script' => Configure::read('app.jsNamespace') . ".Helper.initCkeditor('configurations-value');"
+            'script' => Configure::read('app.jsNamespace') . ".AppCkeditor.init('configurations-value');"
         ]);
         echo $this->Form->control('Configurations.value', [
             'type' => 'textarea',
@@ -78,7 +78,7 @@ switch ($configuration->type) {
         break;
     case 'textarea_big':
         $this->element('addScript', [
-            'script' => Configure::read('app.jsNamespace') . ".Helper.initCkeditorBig('configurations-value');"
+            'script' => Configure::read('app.jsNamespace') . ".AppCkeditor.initBig('configurations-value');"
         ]);
         echo $this->Form->control('Configurations.value', [
             'type' => 'textarea',

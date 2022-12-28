@@ -130,7 +130,7 @@ foodcoopshop.ModalProductNameEdit = {
 
         new bootstrap.Modal(document.getElementById(modalSelector.replace(/#/, ''))).show();
 
-        foodcoopshop.Helper.initCkeditor('dialogDescriptionShort');
+        foodcoopshop.AppCkeditor.init('dialogDescriptionShort');
 
         var nameCell = row.find('td.cell-name');
         $(modalSelector + ' #dialogName').val(foodcoopshop.Admin.decodeEntities(nameCell.find('span.name-for-dialog .product-name').html()));
@@ -162,7 +162,7 @@ foodcoopshop.ModalProductNameEdit = {
             {},
             {
                 onOk: function (data) {
-                    foodcoopshop.Helper.initCkeditorSmallWithUpload('dialogDescription');
+                    foodcoopshop.AppCkeditor.initSmallWithUpload('dialogDescription');
                     CKEDITOR.instances['dialogDescription'].setData(nameCell.find('span.description-for-dialog').html());
                 },
                 onError: function (data) {

@@ -81,7 +81,7 @@ foodcoopshop.ModalOrderDetailProductCustomerEdit = {
 
     getOpenHandler : function(button, modalSelector) {
 
-        foodcoopshop.Helper.initCkeditor('dialogEditCustomerReason', true);
+        foodcoopshop.AppCkeditor.init('dialogEditCustomerReason', true);
 
         var customerDropdownSelector = '#dialogOrderDetailEditCustomerId';
         $(customerDropdownSelector).find('option[value=""]').remove();

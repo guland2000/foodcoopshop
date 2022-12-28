@@ -77,7 +77,7 @@ foodcoopshop.ModalPickupDayCommentEdit = {
 
         new bootstrap.Modal(document.getElementById(modalSelector.replace(/#/, ''))).show();
 
-        foodcoopshop.Helper.initCkeditor('dialogPickupDayComment', true);
+        foodcoopshop.AppCkeditor.init('dialogPickupDayComment', true);
 
         var text = button.attr('originalTitle');
         if (text == foodcoopshop.LocalizedJs.admin.AddComment) {

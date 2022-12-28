@@ -20,7 +20,7 @@ use Cake\Core\Configure;
 $this->element('addScript', [
     'script' =>
         Configure::read('app.jsNamespace') . ".Admin.init();" .
-        Configure::read('app.jsNamespace') . ".Helper.initCkeditorBig('pages-content');" .
+        Configure::read('app.jsNamespace') . ".AppCkeditor.initBig('pages-content');" .
         Configure::read('app.jsNamespace') . ".Admin.disableSelectpickerItems('#pages-id-parent', " . json_encode($disabledSelectPageIds) . ");" .
         Configure::read('app.jsNamespace') . ".Admin.initForm();
     "

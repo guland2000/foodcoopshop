@@ -135,13 +135,13 @@ foodcoopshop.ModalProductAdd = {
             foodcoopshop.ModalProductAdd.getCloseHandler(modalSelector);
         });
 
-        foodcoopshop.Helper.initCkeditor('dialogDescriptionShort');
+        foodcoopshop.AppCkeditor.init('dialogDescriptionShort');
         foodcoopshop.Helper.ajaxCall(
             '/admin/manufacturers/setElFinderUploadPath/' + $('#manufacturerid').val(),
             {},
             {
                 onOk: function (data) {
-                    foodcoopshop.Helper.initCkeditorSmallWithUpload('dialogDescription');
+                    foodcoopshop.AppCkeditor.initSmallWithUpload('dialogDescription');
                 },
                 onError: function (data) {
                     foodcoopshop.Modal.appendFlashMessage(modalSelector, data.msg);

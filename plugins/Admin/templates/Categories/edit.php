@@ -23,7 +23,7 @@ $this->element('addScript', [
         Configure::read('app.jsNamespace') . ".Admin.init();" .
         Configure::read('app.jsNamespace') . ".Upload.initImageUpload('body.categories .add-image-button', foodcoopshop.Upload.saveCategoryTmpImageInForm);" .
         Configure::read('app.jsNamespace') . ".Admin.disableSelectpickerItems('#categories-id-parent', " . json_encode($disabledSelectCategoryIds) . ");" .
-        Configure::read('app.jsNamespace') . ".Helper.initCkeditorBig('categories-description');" .
+        Configure::read('app.jsNamespace') . ".AppCkeditor.initBig('categories-description');" .
         Configure::read('app.jsNamespace') . ".Admin.initForm();
     "
 ]);

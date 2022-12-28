@@ -751,67 +751,6 @@ foodcoopshop.Helper = {
         $('body:not(.cake_errors) #container').css('display', 'block');
     },
 
-    initCkeditor: function (name, startupFocus) {
-
-        startupFocus = startupFocus|| false;
-
-        if (!CKEDITOR.env.isCompatible) {
-            return false;
-        }
-
-        this.destroyCkeditor(name);
-
-        CKEDITOR.timestamp = 'v4.20.1';
-        $('textarea#' + name + '.ckeditor').ckeditor({
-            customConfig: '/js/ckeditor/config.js',
-            startupFocus : startupFocus
-        });
-
-    },
-
-    destroyCkeditor: function (name) {
-
-        if (!CKEDITOR.env.isCompatible) {
-            return false;
-        }
-
-        var editor = CKEDITOR.instances[name];
-        if (editor) {
-            editor.destroy(true);
-        }
-
-    },
-
-    initCkeditorBig: function (name) {
-
-        if (!CKEDITOR.env.isCompatible) {
-            return false;
-        }
-
-        this.destroyCkeditor(name);
-
-        CKEDITOR.timestamp = 'v4.20.1';
-        $('textarea#' + name + '.ckeditor').ckeditor({
-            customConfig: '/js/ckeditor/config-big.js'
-        });
-
-    },
-
-    initCkeditorSmallWithUpload: function (name) {
-
-        if (!CKEDITOR.env.isCompatible) {
-            return false;
-        }
-
-        this.destroyCkeditor(name);
-
-        CKEDITOR.timestamp = 'v4.20.1';
-        $('textarea#' + name + '.ckeditor').ckeditor({
-            customConfig: '/js/ckeditor/config-small-with-upload.js'
-        });
-
-    },
-
     initDatepicker: function () {
         jQuery(function ($) {
             $.datepicker.regional = {

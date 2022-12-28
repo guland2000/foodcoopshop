@@ -121,7 +121,7 @@ foodcoopshop.ModalOrderDetailPickupDayEdit = {
         datepickerInput.val($('.filter-container input[name="pickupDay[]"').val());
         datepickerInput.datepicker();
 
-        foodcoopshop.Helper.initCkeditor('dialogEditPickupDayReason', true);
+        foodcoopshop.AppCkeditor.init('dialogEditPickupDayReason', true);
 
     }
 

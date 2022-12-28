@@ -38,6 +38,7 @@ class LocalizedController extends Controller
             ],
             'helper' => [
                 'defaultLocale' => Configure::read('appDb.FCS_DEFAULT_LOCALE'),
+                'defaultLocaleShort' => substr(Configure::read('appDb.FCS_DEFAULT_LOCALE'), 0, 2),
                 'defaultLocaleInBCP47' => str_replace('_', '-', Configure::read('appDb.FCS_DEFAULT_LOCALE')),
                 'logoutInfoText' => __('Really_sign_out?'),
                 'logout' => __('Sign_out?'),
