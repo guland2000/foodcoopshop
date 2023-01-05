@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33b9d6ab775ae3fb572162836ca3eed6",
+    "content-hash": "5e18892601faf65270168f27034a5dd1",
     "packages": [
         {
             "name": "brick/varexporter",
@@ -1868,6 +1868,18 @@
                 "source": "https://github.com/serbanghita/Mobile-Detect/tree/2.8.41"
             },
             "time": "2022-11-08T18:31:26+00:00"
+        },
+        {
+            "name": "mrothauer/ckeditor5-build",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrothauer/ckeditor5-build.git",
+                "reference": "0270835a5bad013c927e301b15a21adb375b9459"
+            },
+            "default-branch": true,
+            "type": "library",
+            "time": "2023-01-05T11:46:01+00:00"
         },
         {
             "name": "mustangostang/spyc",
@@ -7728,6 +7740,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "mrothauer/ckeditor5-build": 20,
         "psy/psysh": 0
     },
     "prefer-stable": true,

@@ -10,3 +10,5 @@ rm -Rf vendor/studio-42/elfinder/.git
 mkdir -p webroot/js/elfinder
 cp -Rp vendor/studio-42/elfinder/* webroot/js/elfinder
 rm -Rf vendor/studio-42
+
+cp -Rp vendor/mrothauer/ckeditor5-build/build/* webroot/js/ckeditor5

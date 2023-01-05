@@ -45,8 +45,8 @@ class AssetsProvider
     public static function getCkeditorFiles()
     {
         return [
-            '@ckeditor/ckeditor5-build-classic/build/ckeditor.js',
-            '@ckeditor/ckeditor5-build-classic/build/translations/'.substr(I18n::getLocale(), 0, 2).'.js',
+            'ckeditor5/ckeditor.js',
+            'ckeditor5/translations/'.substr(I18n::getLocale(), 0, 2).'.js',
             'plugin:Admin:js/app.ckeditor.js',
             'elfinder/js/elfinder.full.js',
         ];
