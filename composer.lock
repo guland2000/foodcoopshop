@@ -1875,11 +1875,11 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrothauer/ckeditor5-build.git",
-                "reference": "0270835a5bad013c927e301b15a21adb375b9459"
+                "reference": "eec789987bae5630bf6f8f27ae193c38637af357"
             },
             "default-branch": true,
             "type": "library",
-            "time": "2023-01-05T11:46:01+00:00"
+            "time": "2023-01-05T13:28:22+00:00"
         },
         {
             "name": "mustangostang/spyc",
